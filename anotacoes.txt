@@ -1,0 +1,7 @@
+conectar o britix24 com totvs protheus,
+sincronizar os clientes.
+
+https://api.totvs.com.br/apidetails/CustomerVendor_v1_000.json
+
+https://training.bitrix24.com/rest_help/
+https://training.bitrix24.com/rest_help/oauth/app_authentication.php
