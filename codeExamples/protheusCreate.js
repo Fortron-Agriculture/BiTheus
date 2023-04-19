@@ -1,4 +1,4 @@
-var url = "{{host}}/api/crm/v1/customerVendor/{entityType}" 
+var url = `${process.env.PROTHEUS_HOST}/api/crm/v1/customerVendor/{entityType}` 
  
 var xhr = new XMLHttpRequest();
 xhr.open("GET",url, true);
