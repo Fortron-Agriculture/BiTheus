@@ -1,5 +1,5 @@
-const BT = require('./scripts/BTclientes')
-
+const BTclient = require('./scripts/BTclientes')
+const BTcompany = require('./scripts/BTempresas')
 const userdata = {
   NAME:'luis',
   LAST_NAME:'galleguillos',
@@ -13,7 +13,9 @@ async function main(){
   // const result = await BT.createClient(userdata)
   // console.log(result);
 
-  const data = await BT.getClients()
+  // const data = await BTclient.getClients()
+  // console.log(data);
+  const data = await BTcompany.getCompanies()
   console.log(data);
 }
 main()
