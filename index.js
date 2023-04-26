@@ -3,13 +3,9 @@ const cors = require('cors')
 const app = express()
 const port = 8000
 
-const validateLead = require('./validators/validateData')
+const { companyController } = require('./src/company/controller')
 
-app.get('/', (req, res) => {
-  const data = req.query
-  const validatedData = validateLead(data)
-  res.send({validatedData})
-})
+app.get('/', companyController)
 
 app.use(cors())
 app.listen(port, () => {
